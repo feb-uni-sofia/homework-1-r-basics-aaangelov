@@ -1,0 +1,46 @@
+
+R version 3.2.3 (2015-12-10) -- "Wooden Christmas-Tree"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> lintr::lint("Problem_1.R")
+Problem_1.R:2:2: style: Commented code should be removed.
+## NOTE: always leave space before and after <-, -, +, * and / and after commas.
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Problem_1.R:3:2: style: Commented code should be removed.
+## At the very least use the automatic prettifier that comes with R-Studio. Select all lines (e.g. with Ctrl-A)
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Problem_1.R:4:2: style: Commented code should be removed.
+## and select Code => Reformat Code
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Problem_1.R:10:10: style: Commas should always have a space after.
+y <- c(1,4)
+         ^
+Problem_1.R:21:7: style: Commas should always have a space after.
+rep(s,10)
+      ^
+Problem_1.R:22:14: style: Commas should always have a space after.
+length(rep(s,10))
+             ^
+Problem_1.R:33:1: style: Trailing blank lines are superfluous.
+
+^
+Problem_1.R:34:1: style: Trailing blank lines are superfluous.
+
+^
+> 
+> 
